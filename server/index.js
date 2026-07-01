@@ -3,6 +3,7 @@ const cors = require('cors');
 const axios = require('axios');
 
 const app = express();
+console.log('KEY LOADED:', process.env.OPENROUTER_API_KEY ? 'YES, length=' + process.env.OPENROUTER_API_KEY.length : 'MISSING');
 
 app.use(cors());
 app.use(express.json());

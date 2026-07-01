@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AIRecommend from './AIRecommend';
 
 function Hero() {
   const [searchText, setSearchText] = useState('');
@@ -59,6 +60,9 @@ function Hero() {
           Search
         </button>
       </div>
+      {games.length > 0 && (
+         <AIRecommend searchText={searchText} />
+      )}
       <div style={{display: 'flex', gap: '24px', flexWrap: 'wrap', justifyContent: 'center'}}>
         {games.map((game) => (
           <div key={game.id} style={{

@@ -7,7 +7,7 @@ function AIRecommend({ searchText }) {
   async function getRecommendation() {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/recommend', {
+      const response = await fetch('https://game-verse-server.onrender.com/recommend',  {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

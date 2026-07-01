@@ -2,6 +2,54 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# 🎮 GameVerse
+
+**Live Demo:** https://game-verse-amber.vercel.app/
+
+GameVerse is a full-stack game discovery web app that lets users search and explore games, with AI-powered game recommendations built in.
+
+## Features
+
+- 🔍 **Game Search** — search and browse games with cover art, powered by the RAWG Video Games Database API
+- 🤖 **AI Recommendations** — get personalized game suggestions based on your search, powered by OpenRouter's AI models
+- 🎨 Clean, responsive UI with a dark theme
+
+## Tech Stack
+
+**Frontend:** React.js, CSS
+**Backend:** Node.js, Express
+**APIs:** RAWG Video Games API, OpenRouter AI API
+**Deployment:** Vercel (frontend), Render (backend)
+
+## How It Works
+
+1. User searches for a game or genre
+2. Frontend fetches matching games from the RAWG API and displays results with cover images
+3. User can also request AI-generated game recommendations based on their search — this hits a custom Express backend, which calls an AI model via OpenRouter and returns fun, curated suggestions
+
+## Project Structure
+
+## Running Locally
+
+**Frontend:**
+```bash
+npm install
+npm start
+```
+
+**Backend:**
+```bash
+cd server
+npm install
+node index.js
+```
+
+You'll need an OpenRouter API key in `server/.env`:
+
+## What I Learned
+
+Building this project involved handling real-world full-stack challenges — integrating two external APIs, managing environment variables securely across separate frontend/backend deployments, and debugging live production issues (deprecated AI model endpoints, git security scanning, environment variable formatting).
+
 ## Available Scripts
 
 In the project directory, you can run:

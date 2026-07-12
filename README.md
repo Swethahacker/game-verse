@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# 🎮 GameVerse
+#  GameVerse
 
 **Live Demo:** https://game-verse-amber.vercel.app/
 
@@ -10,9 +10,9 @@ GameVerse is a full-stack game discovery web app that lets users search and expl
 
 ## Features
 
-- 🔍 **Game Search** — search and browse games with cover art, powered by the RAWG Video Games Database API
-- 🤖 **AI Recommendations** — get personalized game suggestions based on your search, powered by OpenRouter's AI models
-- 🎨 Clean, responsive UI with a dark theme
+-  **Game Search** — search and browse games with cover art, powered by the RAWG Video Games Database API
+-  **AI Recommendations** — get personalized game suggestions based on your search, powered by OpenRouter's AI models
+-  Clean, responsive UI with a dark theme
 
 ## Tech Stack
 
